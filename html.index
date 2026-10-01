@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#651746">
+  <title>Uswa's Collection | Premium Unstitched Fabrics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="#home">Uswa's <span>Collection</span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#ladies">Ladies</a>
+    <a href="#gents">Gents</a><a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="cart-link" href="#cart">🛒 Cart <b id="cartCount">0</b></a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow">THE PREMIUM FABRIC EXPERIENCE</span>
+    <h1>Wear Your Style.<br><span>Choose Your Fabric.</span></h1>
+    <p>Discover beautiful unstitched fabrics for ladies and gents at Uswa's Collection.</p>
+    <a class="btn" href="#ladies">Shop Ladies</a>
+    <a class="btn light-btn" href="#gents">Shop Gents</a>
+  </div>
+  <div class="hero-art">
+    <img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=900&q=85"
+         alt="Fashion fabric collection">
+    <div class="floating-label">Quality • Variety • Style</div>
+  </div>
+</section>
+
+<section class="trust-row">
+  <div>✦ Quality Fabrics</div><div>✦ Ladies & Gents</div>
+  <div>✦ WhatsApp Orders</div><div>✦ Multiple Payment Options</div>
+</section>
+
+<section class="section" id="new">
+  <div class="heading"><span class="eyebrow">FRESH PICKS</span><h2>New Arrivals</h2>
+  <p>Discover selected fabrics from our collection.</p></div>
+  <div class="products" id="newProducts"></div>
+</section>
+
+<section class="section pale" id="ladies">
+  <div class="heading"><span class="eyebrow">ELEGANCE IN EVERY THREAD</span>
+  <h2>Ladies Collection</h2><p>Explore unstitched fabric varieties.</p></div>
+  <div class="filters">
+    <input id="ladiesSearch" type="search" placeholder="Search ladies fabrics...">
+    <select id="ladiesCategory">
+      <option value="all">All varieties</option><option>Lawn</option>
+      <option>Cotton</option><option>Linen</option><option>Khaddar</option>
+      <option>Chiffon</option><option>Silk</option><option>Embroidered</option>
+    </select>
+    <select id="ladiesSort"><option value="featured">Featured</option>
+      <option value="low">Price: Low to High</option><option value="high">Price: High to Low</option>
+    </select>
+  </div>
+  <div class="products" id="ladiesProducts"></div>
+</section>
+
+<section class="section" id="gents">
+  <div class="heading"><span class="eyebrow">TIMELESS TRADITION</span>
+  <h2>Gents Collection</h2><p>Unstitched fabrics for every occasion.</p></div>
+  <div class="filters">
+    <input id="gentsSearch" type="search" placeholder="Search gents fabrics...">
+    <select id="gentsCategory">
+      <option value="all">All varieties</option><option>Wash & Wear</option>
+      <option>Cotton</option><option>Linen</option><option>Khaddar</option>
+      <option>Boski</option><option>Embroidered</option><option>Plain</option>
+    </select>
+    <select id="gentsSort"><option value="featured">Featured</option>
+      <option value="low">Price: Low to High</option><option value="high">Price: High to Low</option>
+    </select>
+  </div>
+  <div class="products" id="gentsProducts"></div>
+</section>
+
+<section class="banner">
+  <span class="eyebrow">USWA'S COLLECTION</span>
+  <h2>Your Fabric, Your Choice</h2>
+  <p>Need product details? Contact us directly on WhatsApp.</p>
+  <a class="btn" href="https://wa.me/923157540218" target="_blank" rel="noopener">Chat on WhatsApp</a>
+</section>
+
+<section class="section cart-section" id="cart">
+  <div class="heading"><h2>Your Shopping Cart</h2><p>Review your selected products.</p></div>
+  <div id="cartItems"></div>
+  <div class="total-line">Total: Rs. <span id="cartTotal">0</span></div>
+  <button class="btn" id="goCheckout">Continue to Checkout</button>
+  <button class="btn danger-btn" id="clearCart">Clear Cart</button>
+</section>
+
+<section class="section pale" id="checkout">
+  <div class="heading"><h2>Place Your Order</h2><p>Enter your details to send your order on WhatsApp.</p></div>
+  <form id="orderForm" class="order-form">
+    <label>Full Name<input name="name" required placeholder="Your full name"></label>
+    <label>Phone Number<input name="phone" type="tel" required placeholder="03XXXXXXXXX"></label>
+    <label>Email (optional)<input name="email" type="email" placeholder="Your email"></label>
+    <label>City<input name="city" required placeholder="Your city"></label>
+    <label>Complete Address<textarea name="address" required rows="3" placeholder="House, street, area"></textarea></label>
+    <label>Payment Method
+      <select name="payment" required>
+        <option>Cash on Delivery</option><option>Easypaisa</option>
+        <option>JazzCash</option><option>Bank Transfer</option>
+      </select>
+    </label>
+    <p class="small-note">For digital transfers, confirm the store's actual account details before sending payment.</p>
+    <button class="btn" type="submit">Confirm Order on WhatsApp</button>
+  </form>
+</section>
+
+<section class="section about" id="about">
+  <span class="eyebrow">OUR STORY</span><h2>About Us</h2>
+  <p>Welcome to Uswa's Collection. We offer a variety of unstitched fabrics for ladies and gents, with collections selected according to quality, style and customer needs.</p>
+  <p><strong>Location:</strong> Khanewal, Kacha Khu, Pakistan</p>
+</section>
+
+<section class="section" id="contact">
+  <div class="heading"><h2>Contact Us</h2><p>We are here to help with your fabric enquiries.</p></div>
+  <div class="contact-grid">
+    <a href="https://wa.me/923157540218" target="_blank" rel="noopener">
+      <span>💬</span><h3>WhatsApp</h3><p>03157540218</p></a>
+    <a href="mailto:uswanazish311@gmail.com"><span>✉️</span>
+      <h3>Email</h3><p>uswanazish311@gmail.com</p></a>
+    <div><span>📍</span><h3>Our Location</h3><p>Khanewal, Kacha Khu</p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <h2>Uswa's <span>Collection</span></h2>
+  <p>Premium Unstitched Fabrics for Ladies & Gents</p>
+  <p>Cash on Delivery · Easypaisa · JazzCash · Bank Transfer</p>
+  <p>© 2026 Uswa's Collection. All rights reserved.</p>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/923157540218" target="_blank"
+   rel="noopener" aria-label="Contact on WhatsApp">☏</a>
+
+<script src="script.js"></script>
+</body>
+</html>
